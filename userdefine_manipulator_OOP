@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+ostream &tab(ostream &dout){
+    dout<<"\t";
+    return dout;
+}
+int main(){
+    cout<<1<<tab<<2;
+
+
+    return 0;
+}
