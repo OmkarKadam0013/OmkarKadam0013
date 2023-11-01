@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    //this are the formating flags,bits field and setf 
+    cout.width(10);
+    cout.fill('*');
+    cout.setf(ios::left,ios::adjustfield);
+    cout<<123<<endl;
+
+    cout.width(5);
+    cout.setf(ios::showpos);
+    cout<<123;
+
+    return 0;
+}
