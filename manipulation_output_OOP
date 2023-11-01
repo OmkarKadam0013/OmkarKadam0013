@@ -1,0 +1,10 @@
+#include<iostream>
+#include<iomanip>//this is header file used for manipulation
+using namespace std;
+int main(){
+   cout<<setw(10)<<123<<endl;
+   cout<<setw(10)<<setfill('*')<<1234;
+
+
+    return 0;
+}
