@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main(){
+    //width() function which is in ios class
+    cout.width(10);
+    cout<<543;
+    cout.width(5);
+    cout<<12<<endl;
+    //pricision() function
+    cout.precision(2);
+    cout<<3.1254896<<endl;
+
+    //fill()
+    cout.fill('*');
+    cout.width(10);
+    cout<<12345;
+    
+
+    return 0;
+}
