@@ -1,0 +1,29 @@
+n  = int(input("ENter the numbers of rows"))
+m = int(input("Enter the no of colomn:"))
+list1 = []
+list2 = []
+for i in range(n):
+    for j in range(m):
+        list[i][j] = list1[i][j] + list2[i][j]
+        
+print("Addition of given matrix is",list)
+
+for i in range(m):
+    for j in range(n):
+        list[i][j] = list1[i][j] - list2[i][j]
+        
+print("Substraction of given matrix is",list)
+
+
+for i in range(m):
+    for j in range(n):
+        list3[i][j] = list1[j][i]
+
+print("Transpose of list1 is :",list3)
+
+for i in range(m):
+    for j in range(n):
+        list3[i][j] = list2[j][i]
+
+print("Transpose of list2 is :",list3)
+
