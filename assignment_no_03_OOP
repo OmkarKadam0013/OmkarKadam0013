@@ -1,0 +1,87 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class Publication{
+	string name;
+	float price;
+	public:
+	void set(){
+		cout<<"Enter the book name:";
+		cin>>name;
+		cout<<"Enter the price :";
+		cin>>price;	
+		}
+	void get(){
+		cout<<name<<endl;
+		cout<<price<<endl;
+		}
+	
+	};
+class book:public Publication{
+	int count;
+	public:
+	void add_count(){
+	Publication:set();
+		cout<<"Enter the book count:";
+		cin>>count;
+		if(count == -1){
+			throw count;
+			}
+		}
+	void display(){
+		Publication:get();
+		cout<<count<<endl;
+		}	
+	};
+class Tape:public Publication{
+	float time;
+	public:
+	void add_time(){
+		Publication:set();
+		cout<<"Enter the time in minutes :";
+		cin>>time;
+		}
+	void display1(){
+		Publication:get();
+		cout<<time<<endl;
+		}
+	};
+int main(){
+	Publication obj1;
+	book obj2;
+	Tape obj3;
+	int choice;
+	cout<<"Enter your choice 1 for add count and 2 for time";
+	cin>>choice;
+	try{
+	if(choice == 1){
+		obj2.add_count();
+		obj2.display();
+		}
+	else if(choice == 2){
+		obj3.add_time();
+		obj3.display1();
+		}
+	else{
+		cout<<"Invalid price :"<<endl;
+		}
+	  }
+	 catch(int ){
+	     cout<<"Name is 0"<<endl;
+	     cout<<"Price is 0"<<endl;
+	     cout<<"count is 0"<<endl;	 
+	 }
+
+
+
+
+
+
+
+
+
+
+	
+
+	return 0;
+	}
